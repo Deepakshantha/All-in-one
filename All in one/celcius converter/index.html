@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>celcius</title>
+</head>
+<body>
+    
+    <div id="mainbox"> 
+        <h2>celcius converter</h2>
+        <div >
+        <input type="text" id="input" placeholder="celcius number">
+    </div>
+        <div>
+            <button id="submit" onclick="convert()" >get answer</button>
+        </div>
+        <div id="result">
+
+        </div>
+    </div>
+
+    <script> 
+function convert() {
+    const celcius = Number(document.getElementById('input').value)
+    const farenhit = celcius* 32
+    const result = document.getElementById("result")
+    result.innerHTML = farenhit
+}
+   
+    </script>
+</body>
+</html>

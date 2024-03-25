@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link src="stylesheet" href="style.css">
+    <title>rate cal</title>
+</head>
+<body >
+    <div id="rate">
+        <h2>Rate calulator</h2>
+        <div>
+            <input type="text" id="input" placeholder="calulate rate">
+        </div>
+        <div>
+            <button type="submit" onclick="clickrate()">submit </button>
+        </div>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function clickrate(){
+            let unite = Number(document.getElementById("input").value)
+            let rate = 0
+            if (unite<5)
+               rate = 10
+              else if (unite>=5 && unite<=10)
+                   console.log(rate = 15)
+
+                      else if (unite>=10 && unite<=15)
+                        rate = 20
+
+                            else
+                              rate = 50
+
+                              let result = document.getElementById("result")
+                              result.innerHTML= rate
+                              }
+   
+    </script>
+</body>
+</html>

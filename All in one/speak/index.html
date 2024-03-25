@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>voice bot</title>
+   
+</head>
+<body>
+    <h2>Type here</h2>
+    <textarea  rows="5" cols="50" id="click"></textarea>
+    <br>
+    <button onclick="textToSpeech()">click to speak</button>
+
+    <script>
+             const textToSpeak = document.getElementById("textToSpeech");
+
+
+            function textToSpeech(){
+            let speechobj = new SpeechSynthesisUtterance(textToSpeak.value);
+            window.SpeechSynthesis.speak(speechobj);
+
+
+                      }
+
+
+
+    </script>
+</body>
+</html>

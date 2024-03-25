@@ -1,0 +1,10 @@
+#mainbox {
+    
+    height: 200px;
+    width: 100px;
+    margin: 100px;
+    background-color: aqua;
+    border-radius: 10px;
+    padding: 90px;
+
+}
